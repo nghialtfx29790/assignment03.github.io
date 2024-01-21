@@ -1,0 +1,418 @@
+@media screen and (min-width: 1025px) {
+  * {
+    margin: 0 0;
+    padding: 0 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+
+  i {
+    color: #07f;
+    transition-duration: 0.2s;
+  }
+
+  body {
+    scroll-behavior: smooth;
+  }
+
+  span {
+    font-weight: normal !important;
+    font-size: 12px !important;
+  }
+
+  p {
+    margin: 0 0 !important;
+  }
+
+  /* Đây là đoạn code CSS để tạo kiểu cho phần đầu trang */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 300px;
+    padding-bottom: 100px;
+
+    background-image: linear-gradient(#00000088, #00000088),
+      url("../images/banner.jpg");
+    background-size: cover;
+  }
+
+  header h1,
+  header p {
+    color: #fafafa;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  /* Đây là đoạn code CSS để tạo kiểu cho thanh điều hướng */
+  nav a {
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.5s ease;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    transition: background-color 0.5s ease;
+  }
+
+  .NavDropDown {
+    display: flex;
+    background-color: #fafafa;
+  }
+
+  .NavDropDown ul {
+    padding: 0 0;
+  }
+
+  .NavDropDown li a {
+    justify-content: flex-start;
+  }
+
+  .SideNav {
+    display: none;
+  }
+
+  /* Đây là đoạn code CSS để tạo kiểu cho thanh điều hướng ở trạng thái bình thường */
+  .Navbar {
+    transition: background-color 0.5s ease;
+  }
+
+  .Navbar .col,
+  .Navbar .col-4,
+  .Navbar .row {
+    border-left: #bbb solid 1px;
+    border-right: #bbb solid 1px;
+    padding: 0 0;
+  }
+
+  .Navbar a {
+    padding: 25%;
+    background-color: #fff;
+    color: #000;
+  }
+
+  .Navbar a:hover {
+    background-color: #eee;
+  }
+
+  .Navbar img {
+    width: 150px;
+    height: 150px;
+    border: solid #fafafa 7px;
+    border-radius: 50%;
+  }
+
+  .Navbar .col-4 {
+    text-align: center;
+    display: block;
+    height: 120px;
+  }
+
+  .Navbar img,
+  .Navbar h1,
+  .Navbar small {
+    position: relative;
+    top: -120px;
+  }
+
+  .Navbar .NavDropDown a {
+    padding: 25% 0;
+  }
+  .Navbar .NavDropDown li a {
+    padding: 10% 5%;
+  }
+
+  /* Đây là đoạn code CSS để tạo kiểu cho thanh điều hướng ở trạng thái sticky */
+  .sticky .col-4 {
+    order: -1;
+  }
+
+  .sticky {
+    transition: background-color 0.5s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: #222;
+    padding: 5px 20px;
+    z-index: 1;
+  }
+
+  .sticky .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sticky a {
+    padding: 20px;
+    background-color: #222;
+    border: none;
+  }
+
+  .sticky a:hover {
+    background-color: #777;
+  }
+
+  .sticky h1,
+  .sticky p {
+    color: #fafafa;
+  }
+
+  .sticky img,
+  .sticky small,
+  .sticky i {
+    display: none;
+  }
+
+  .sticky .NavDropDown {
+    border: #fafafa solid 1px;
+    padding: 0 0;
+  }
+
+  /* Đây là đoạn mã CSS để tạo kiểu cho phần thông tin cá nhân và mục tiêu nghề nghiệp */
+  #career-goal-and-personal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+  }
+
+  #career-goal-and-personal-info article:first-child {
+    background-color: #eee;
+  }
+
+  #career-goal-and-personal-info article:last-child {
+    background-color: #ddd;
+  }
+
+  #career-goal-and-personal-info .display-6 {
+    margin-bottom: 15px;
+  }
+
+  #career-goal-and-personal-info article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 50px 50px;
+  }
+
+  #career-goal-and-personal-info ul {
+    list-style-type: none;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  #career-goal-and-personal-info li {
+    display: flex;
+    margin: 5px 0;
+  }
+
+  #career-goal-and-personal-info li:last-child {
+    margin-top: 30px;
+    column-gap: 15px;
+  }
+
+  #career-goal-and-personal-info i:hover {
+    color: #222;
+    transition-duration: 0.2s;
+  }
+
+  /* Đây là đoạn code CSS để tạo kiểu cho một biểu mẫu dựa trên trạng thái của nó. Nó bao gồm hai trạng thái: “Validated” và “Unvalidated”. */
+
+  /* Trạng thái “Validated”: Khi biểu mẫu đã được xác thực (Validated), các thông tin sẽ đươc hiển thị và biểu mẫu sẽ dươc */
+  .Validated h1,
+  .Validated ul,
+  .Validated i {
+    display: inline;
+  }
+
+  .Validated .form {
+    display: none;
+  }
+
+  /* Trạng thái “Unvalidated”: Khi biểu mẫu chưa được xác thực (Unvalidated), các thông tin sẽ bị ẩn */
+  .Unvalidated h1,
+  .Unvalidated ul,
+  .Unvalidated i {
+    display: none;
+  }
+
+  .Unvalidated .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .Unvalidated .form button {
+    margin-top: 20px;
+  }
+
+  /* Đây là đoạn mã CSS để tạo kiểu cho phần mô tả cá nhân */
+  #personal-description {
+    margin: 50px 0;
+  }
+
+  #personal-description .col {
+    padding: 5px 10px;
+  }
+
+  #personal-description .CardBorder {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+    border: solid #eaeaea 2px;
+    box-shadow: 0 0 15px #ddd;
+  }
+
+  #personal-description h1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #personal-description i {
+    text-align: end;
+    color: #777;
+    font-size: 40px;
+  }
+
+  #personal-description .IconContainer {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    column-gap: 5px;
+    text-align: center;
+  }
+
+  #personal-description .IconContainer i {
+    justify-self: center;
+    font-size: 20px;
+    color: #07f;
+
+    border-radius: 50%;
+    border: 1px solid #07f;
+    padding: 10px;
+  }
+
+  #personal-description .ProgressContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    margin-right: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Đây là đoạn mã CSS để tạo kiểu cho phần giải thưởng */
+  #certificates {
+    background-color: #eee;
+    padding: 50px 0;
+  }
+
+  #certificates .row {
+    margin-top: 40px;
+  }
+
+  #certificates .col {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #certificates .col:nth-child(3),
+  #certificates .col:last-child {
+    /* Tách đoạn thẳng nằm ngang ở dưới với đoạn thẳng nằm dọc */
+    margin-top: 20px;
+    /* Tạo khoảnh cách giữa đoạn thẳng nằm ngang ở dưới với element của nó*/
+    padding-top: 20px;
+    border-top: solid #d6c08d 1px;
+  }
+
+  #certificates .col:nth-child(2):nth-child(2) {
+    border-left: solid #d6c08d 1px;
+    /* Tạo khoảnh cách giữa đoạn thẳng nằm dọc với element của nó*/
+    padding-left: 10px;
+  }
+
+  #certificates img {
+    width: 100%;
+    height: auto;
+  }
+
+  #certificates .col div {
+    margin-left: 20px;
+    align-self: center;
+  }
+  #certificates p {
+    margin: 0 0;
+  }
+
+  /* Đây là đoạn mã CSS để tạo kiểu cho phần dự án */
+  #projects h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  #projects .col {
+    padding: 5px 10px;
+  }
+
+  #projects .card {
+    height: 100%;
+  }
+
+  #projects .card-header {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #projects ul li:nth-child(1) {
+    display: flex;
+    column-gap: 10%;
+    align-items: baseline;
+  }
+
+  #projects ul li {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+  }
+
+  #projects ul li:nth-child(1) div {
+    display: flex;
+  }
+
+  /* Đây là đoạn mã CSS để tạo kiểu cho phần footer */
+  footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    background-color: #fafafa;
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+
+  footer div {
+    display: flex;
+    align-items: center;
+  }
+
+  footer i {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  footer p {
+    display: inline;
+    padding: 10px 0;
+  }
+}
