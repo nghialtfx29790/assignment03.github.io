@@ -45,7 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
-  width: 90%;
+  height: 50px;
   aspect-ratio: 1 / 1;
   font-size: 20px;
   border: #a05f15 solid 2px;
@@ -114,7 +114,6 @@ body {
     justify-content: center;
   }
 
-  #timeline i,
   #timeline h6,
   #timeline p {
     padding-left: 10px;
